@@ -89,6 +89,7 @@ void FirmataClass::printVersion(void)
   FirmataStream->write(REPORT_VERSION);
   FirmataStream->write(FIRMATA_MAJOR_VERSION);
   FirmataStream->write(FIRMATA_MINOR_VERSION);
+  FirmataStream->write(firmwareVersionVector[1]);
 }
 
 void FirmataClass::blinkVersion(void)
